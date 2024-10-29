@@ -1,11 +1,53 @@
+import Link from "next/link";
 
-import Header from "../../Components/Header";
 
 export default function Home() {
   return (
     <>
-    <Header/>
-        <main className="h-screen w-screen bg-background flex">
+    <header className="fixed top-10 left-[90px] right-[90px] flex justify-between items-center">
+    <div className="flex items-center">
+        {/* LOGO */}
+        <Link href="/">
+          
+            <img src="/images/logo.svg" className="h-[45px]" />
+          
+        </Link>
+
+        {/* Links */}
+        <nav className="ml-[50px]">
+          <ul className="flex space-x-[30px]">
+            <li>
+              <Link href="/" className="text-text-200">
+                Featured
+              </Link>
+            </li>
+            <li>
+              <Link href="/" className="text-text-200">
+                How It Work
+              </Link>
+            </li>
+            <li>
+              <Link href="/" className="text-text-200">
+                Pricing
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <ul className="flex">
+        <li>
+          <Link href="/" className="px-8 py-3 text-text-200">
+            Contact Us
+          </Link>
+        </li>
+        <li>
+          <Link href="/" className="px-8 py-3 text-white bg-brand rounded-md">
+            Join Us
+          </Link>
+        </li>
+      </ul>
+    </header>
+     <main className="h-screen w-screen bg-background flex">
     {/* Headline */}
     <div className="w-7/12 flex flex-row items-center px-[90px]">
       <div>
