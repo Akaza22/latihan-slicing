@@ -26,10 +26,10 @@ export default function Home() {
 
         <div className="flex space-x-[30px] mt-[60px]">
           <a href="#">
-            <img src="/images/appstore.svg" />
+            <img src="/images/appStore.svg" />
           </a>
           <a href="#">
-            <img src="/images/googleplay.svg" />
+            <img src="/images/googlePlay.svg" />
           </a>
         </div>
       </div>
